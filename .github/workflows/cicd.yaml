@@ -13,7 +13,7 @@ env:
   ECS_CLUSTER: techmart-cluster-eastjava-danang                # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: .aws/taskdef.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: container           # set this to the name of the container in the
+  CONTAINER_NAME: techmart-container          # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
 permissions:
