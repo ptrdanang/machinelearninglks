@@ -201,7 +201,7 @@ def generate_forecast(historical_data: pd.DataFrame, periods: int = 30) -> dict:
             }
         }
 
-@app.route('/api/predict', methods=['POST'])
+@app.route('/api/predictions', methods=['POST'])
 @log_request
 def predict():
     try:
