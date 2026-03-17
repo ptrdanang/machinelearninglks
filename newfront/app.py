@@ -201,7 +201,7 @@ def generate_forecast(historical_data: pd.DataFrame, periods: int = 30) -> dict:
             }
         }
 
-@app.route('/api/predictions', methods=['POST'])
+@app.route('/api/predict', methods=['POST'])
 @log_request
 def predict():
     try:
@@ -220,7 +220,7 @@ def predict():
 
         # Build API Gateway URL - IMPORTANT FIX HERE
         base_url = app.config['PREDICTION_API_URL'].rstrip('/')
-        api_url = f"{base_url}/predictions"  # Construct full endpoint URL
+        api_url = f"{base_url}/predict"  # Construct full endpoint URL
         
         # Prepare headers
         headers = {
