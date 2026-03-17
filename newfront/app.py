@@ -220,7 +220,7 @@ def predict():
 
         # Build API Gateway URL - IMPORTANT FIX HERE
         base_url = app.config['PREDICTION_API_URL'].rstrip('/')
-        api_url = f"{base_url}/predict"  # Construct full endpoint URL
+        api_url = f"{base_url}/predictions"  # Construct full endpoint URL
         
         # Prepare headers
         headers = {
