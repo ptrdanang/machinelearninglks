@@ -11,7 +11,7 @@ env:
   ECR_REPOSITORY: techmart-ecr-eastjava-danang
   ECS_SERVICE: techmart-service-eastjava-danang
   ECS_CLUSTER: techmart-cluster-eastjava-danang
-  ECS_TASK_DEFINITION: .aws/taskdef
+  ECS_TASK_DEFINITION: .aws/taskdef.json
   CONTAINER_NAME: techmart-container
 
 permissions:
